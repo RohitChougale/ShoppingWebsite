@@ -1,0 +1,66 @@
+.banner {
+  position: relative;
+  background-image: url("src\assets\banner-bg.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* height: auto; */
+  background-size: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-origin: content-box;
+  height: 88.6vh;
+  width: 100%;
+  /* height: 100%; */
+  /* display: flex; */
+}
+.text {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* height: 100%; */
+  top: 0%;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+.text h1 {
+  text-align: center;
+  font-size: 50px;
+  color: aliceblue;
+  margin-top: 50px;
+  text-shadow: 4px 1px 2px cornflowerblue;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  width: 300px;
+  margin-bottom: 5px;
+  /* height: 400px; */
+}
+.mat-green {
+  background-color: #89c21e;
+  color: aliceblue;
+}
+.card img {
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-left: 70px;
+}
+.matC {
+  width: 300px;
+  height: 400px;
+  box-shadow: 20px 20px 30px rgb(29, 39, 11);
+}

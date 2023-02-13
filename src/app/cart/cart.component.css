@@ -1,0 +1,132 @@
+.container{
+  margin-top: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 1px solid; */
+  /* width: 600px; */
+}
+.head{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  border-bottom: 0.3px solid #174733 ;
+  margin-bottom: 15px;
+    margin-top: 20px;
+}
+.subhead{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 600px;
+
+}
+.container h3{
+  font-weight: 600;
+  font-size: 30px;
+}
+.cnts{
+  background-image: url('src\assets\smooothlines.gif');
+  text-decoration: none;
+  color: #174733;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+}
+.cnts:hover{
+  color: #89c21e;
+}
+.head h6{
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.data{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+.subdata{
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 600px;
+}
+.data h6{
+  font-size: 20px;
+}
+.data img{
+  height: 100px;
+  width: 100px;
+}
+
+.qt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.qty{
+ width: 30px;
+    font-size: 20px;
+    background-color: #567e0c;
+    height: 31px;
+    border: 1px solid #567e0c;
+    color: aliceblue;
+}
+.data span{
+  font-size: 19px;
+  border-top:1px solid #567e0c ;
+  border-bottom:1px solid #567e0c ;
+  padding: 3px;
+}
+.rem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100px; */
+
+}
+.remove{
+  font-size: 15px;
+  text-decoration: none;
+  color: #174733;
+  cursor: pointer;
+}
+.remove:hover{
+  /* background-color: #174733; */
+  color: #89c21e;
+}
+
+.subtotal{
+  display: flex;
+    align-items: baseline;
+    /* width: ; */
+    width: 100%;
+    justify-content: space-between;
+    /* margin-left: 85%; */
+    padding: 10px;
+    background-color: #89c21e;
+}
+.subtotal h6{
+   font-size: 15px;
+  font-weight: 800;
+
+}
+.mat-green{
+  background-color: #89c21e;
+  color: aliceblue;
+}

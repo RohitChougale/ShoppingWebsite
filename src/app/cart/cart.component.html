@@ -1,0 +1,31 @@
+<div class="container">
+  <h3>Shopping cart</h3>
+  <button mat-raised-button color="green" routerLink="/home">Continue Shopping</button>
+  <div class="head">
+    <h6>Description</h6>
+    <div class="subhead">
+      <h6>Price</h6>
+      <h6>Quantity</h6>
+      <h6>Total</h6>
+    </div>
+  </div>
+
+  <div class="data" *ngFor="let data of cartData">
+    <h6><img src="{{data.image}}" alt="">{{data.title}}</h6>
+    <div class="subdata">
+      <h6>{{data.price | currency}}</h6>
+      <div class="rem">
+        <div class="qt">
+          <h6><button class="qty" (click)="subqty(data)">-</button><span>{{data.qty}}</span><button class="qty"
+              (click)="addqty(data)">+</button></h6>
+        </div>
+        <a class="remove" (click)="remove(data)">Remove</a>
+      </div>
+      <h6>{{data.total | currency}}</h6>
+    </div>
+  </div>
+  <div class="subtotal">
+    <h6>SubTotal</h6>
+    <h6>{{st|json}}</h6>
+  </div>
+</div>

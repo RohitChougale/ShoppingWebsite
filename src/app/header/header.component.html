@@ -1,0 +1,37 @@
+<div class="header">
+
+  <!-- <div class="name"> -->
+  <h5 class="name">CANOPY</h5>
+  <!-- <i> The Trend</i> -->
+  <!-- </div> -->
+
+  <div class="search">
+    <input type="text" class="form-control" placeholder="Search" [(ngModel)]="filterStatus">
+    <a href=""><mat-icon class="sicon">search</mat-icon></a>
+  </div>
+
+  <a routerLink="/cart" class="cart"><mat-icon matBadge="{{this.totalCart}}" >add_shopping_cart</mat-icon></a>
+
+</div>
+
+
+<div class="subheader">
+  <a routerLink="/home">HOME</a>
+  <a href="">FASHION</a>
+  <a href="">JEWELLERY</a>
+  <a href="">ELECTRONICS</a>
+</div>
+
+<div class="container">
+  <div class="card" *ngFor="let data of data | filter:filterStatus:'category'">
+    <mat-card class="matC">
+
+      <img mat-card-md-image src="{{data.image}}" alt="image">
+      <mat-card-title>{{data.title}}</mat-card-title>
+      <mat-card-subtitle>{{data.price | currency}}</mat-card-subtitle>
+      <mat-card-content>{{data.description}}</mat-card-content>
+      <div class="btn"><button mat-raised-button color="green" (click)="add(data)">Add to Cart</button></div>
+    </mat-card>
+
+  </div>
+</div>

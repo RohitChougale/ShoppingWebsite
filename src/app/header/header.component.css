@@ -1,0 +1,110 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  height: 60px;
+  background-color: #174733;
+  /* position: fixed; */
+
+  /* padding: 10px; */
+}
+.name {
+  color: white;
+  font-size: 32px;
+  text-shadow: 4px 1px 4px greenyellow;
+  text-decoration: underline;
+  /* width: 50px; */
+}
+.name h5 {
+  font-size: 20px;
+  letter-spacing: 5px;
+  /* margin: 0px 0px 0px; */
+}
+.name i {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.header input {
+  width: 160px;
+  border-right: none;
+  border-radius: 6px 0px 0px 6px;
+}
+.mat-icon {
+  color: aliceblue;
+}
+.sicon {
+  width: 50px;
+  height: 37px;
+  color: black;
+  /* border: 1px solid; */
+  border-left: none;
+  padding: 5px;
+  border-radius: 0px 6px 6px 0px;
+  background-color: #89c21e;
+}
+.cart {
+  text-decoration: none;
+  color: #89c21e;
+}
+.subheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  border-bottom: 1px solid #649111;
+  /* position: fixed; */
+}
+
+.subheader a {
+  text-decoration: none;
+  color: black;
+}
+.subheader a:hover {
+  color: #89c21e;
+}
+
+.container {
+  position: relative;
+  /* top:50%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  width: 300px;
+  margin-bottom: 5px;
+  /* height: 400px; */
+}
+.mat-green {
+  background-color: #89c21e;
+  color: aliceblue;
+}
+.card img {
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-left: 70px;
+}
+.matC {
+  width: 300px;
+  height: 400px;
+  box-shadow: 20px 20px 30px rgb(29, 39, 11);
+}
+.mat-badge-content{
+  color: #649111;
+  background-color: rgb(101, 136, 166);
+}

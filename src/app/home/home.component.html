@@ -1,0 +1,20 @@
+<div class="banner">
+  <div class="text">
+    <h1>Get Start your favorite Shopping</h1>
+  </div>
+
+
+  <div class="container">
+    <div class="card" *ngFor="let data of AllProduct">
+      <mat-card class="matC">
+
+        <img mat-card-md-image src="{{data.image}}" alt="image">
+        <mat-card-title>{{data.title}}</mat-card-title>
+        <mat-card-subtitle>{{data.price | currency}}</mat-card-subtitle>
+        <mat-card-content>{{data.description}}</mat-card-content>
+        <div class="btn"><button mat-raised-button color="green" (click)="add(data)">Add to Cart</button></div>
+      </mat-card>
+
+    </div>
+  </div>
+</div>
